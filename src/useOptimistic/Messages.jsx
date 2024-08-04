@@ -11,5 +11,10 @@ export default function Messages() {
     const sentMessage = await deliverMessage(formData.get('message'));
     setMessages((messages) => [...messages, { text: sentMessage }]);
   }
-  return <Thread messages={messages} sendMessage={sendMessage} />;
+  return (
+    <>
+      <h1 className="title">useOptimistic</h1>
+      <Thread messages={messages} sendMessage={sendMessage} />
+    </>
+  );
 }

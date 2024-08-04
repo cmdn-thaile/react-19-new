@@ -23,13 +23,13 @@ export function Thread({ messages, sendMessage }) {
   return (
     <>
       {optimisticMessages.map((message, index) => (
-        <div key={index}>
+        <div key={index} className='mb-4'>
           {message.text}
           {!!message.sending && <small> (Sending...)</small>}
         </div>
       ))}
       <form action={formAction} ref={formRef}>
-        <input type="text" name="message" placeholder="Hello!" />
+        <input type="text" name="message" placeholder="Hello!" className='mr-4' />
         <button type="submit">Send</button>
       </form>
     </>

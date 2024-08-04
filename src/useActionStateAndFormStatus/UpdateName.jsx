@@ -16,11 +16,14 @@ export function UpdateName() {
   );
 
   return (
-    <form action={formAction}>
-      <input type="text" name="name" />
-      <Loader />
-      <SubmitButton />
-      <Name name={state?.name} />
-    </form>
+    <>
+    <h1 className="title">React 19 FORM</h1>
+      <form action={formAction}>
+        <input type="text" name="name" placeholder='Name....' />
+        <Loader />
+        <SubmitButton />
+        <Name name={state?.name} />
+      </form>
+    </>
   );
 }
