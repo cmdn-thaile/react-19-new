@@ -7,9 +7,9 @@ import { Persons } from './use/Persons';
 function App() {
   return (
     <>
-      <Persons />
+      {/* <Persons /> */}
       {/* <UpdateName /> */}
-      {/* <Messages /> */}
+      <Messages />
     </>
   );
 }

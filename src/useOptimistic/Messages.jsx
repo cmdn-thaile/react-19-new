@@ -13,7 +13,7 @@ export default function Messages() {
     try {
       const sentMessage = await deliverMessage(formData.get('message'));
       setMessages((messages) => [...messages, { text: sentMessage }]);
-      setError(''); // Clear any previous errors
+      setError('');
     } catch (err) {
       setError('Error sending message');
     }
